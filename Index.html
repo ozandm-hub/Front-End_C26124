@@ -17,24 +17,71 @@
     
     <nav class="menu">
       <ul class="flex-menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     
     <main class="content">
-      <h1>Bienvenido a Consultora Economica</h1>
-      <h2>Contenido principal</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus vel odit dolore molestiae! Minus perspiciatis aliquam eius sapiente vitae ducimus numquam accusamus facilis minima.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro autem odit iste, ad expedita corporis nesciunt ipsum tempora rem fugit qui doloremque libero modi deserunt hic nihil nisi illum!</p>
-    
-    
+      <section id="inicio" class="section-padding">
+        <h1>Análisis Estratégico e Industrial</h1>
+        <p>Transformamos datos en decisiones inteligentes para el crecimiento productivo.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_YX58-FoS64" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="servicios" class="section-padding">
+        <h2>Nuestros Servicios</h2>
+        <div class="container-cards">
+            <article class="card">
+                <h3>Informes de Mercado</h3>
+                <img src="Images/investigacion-de-mercado.png" alt="Informes de Mercado">
+                <p>Análisis detallado de patentamientos y segmentación industrial.</p>
+            </article>
+            <article class="card">
+                <h3>Economía Internacional</h3>
+                <img src="Images/divisa.png" alt="Economía Internacional">
+                <p>Análisis de tendencias económicas globales y su impacto en el sector industrial.</p>
+            </article>
+            <article class="card">
+                <h3>Estudios Sectoriales</h3>
+                <img src="Images/sectorial.png" alt="Estudios Sectoriales">
+                <p>Gestión de proyectos industriales y análisis de sectores productivos.</p>
+            </article>          
+        </div>
+      </section>
+
+      <section id="nosotros" class="section-padding">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una consultora económica especializada en análisis estratégico e industrial. Nuestro equipo de expertos se dedica a transformar datos complejos en información clara y accionable para impulsar el crecimiento productivo de nuestros clientes.</p>
+      </section>
+
+      <section id="contacto" class="section-padding">
+        <h2>Contacto</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9618362917736!2d-58.38321030406189!3d-34.60512653770704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1778616220246!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" class="form-contacto">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje y/o consulta:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar Consulta</button>
+        </form>
+      </section>
     </main>
     
-    <footer class="footer">FOOTER</footer>
+    <footer class="footer">
+      <p>&copy; 2026 Consultora Económica - Todos los derechos reservados.</p>
 
+    </footer>
+    
     </div>    
 </body>
 </html>
