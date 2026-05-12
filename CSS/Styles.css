@@ -4,21 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif; 
+    line-height: 1.6;
+    color: #333;
+}
+
 .layout {
-   display: grid;
-   
-   grid-template-columns: 1fr;
-
-   grid-template-rows: 140px 50px 1fr 60px;
-
-     grid-template-areas:
-        "header "
-        "menu"
-        "content"
-        "footer";
-
-     /*alto de la pantalla*/
-     height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px 50px 1fr 60px;
+  grid-template-areas:
+    "header "
+    "menu"
+    "content"
+    "footer";
+  height: 100vh;
 }
 
 .header {
@@ -33,24 +34,11 @@
   color: #0f172a;
 }
 
+
 .menu {
   grid-area: menu;
   background: #f8fafc;
   padding: 5px;
-}
-
-.content {
-  grid-area: content;
-  background: #d7e6fb;
-  padding: 20px;
-}
-
-.footer {
-  grid-area: footer;
-  background: rgb(90, 100, 115);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .flex-menu {
@@ -59,6 +47,7 @@
   justify-content: center;
   gap: 10px;
   list-style: none;
+  align-items: center;
 }
 
 .flex-menu li {
@@ -78,4 +67,74 @@
 .flex-menu a:hover {
   background: #e0f2fe; 
   transform: translateX(5px); 
+}
+
+.content {
+  grid-area: content;
+  background: #d7e6fb;
+  padding: 20px;
+}
+
+.section-padding {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+iframe {
+    max-width: 100%;
+}
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-contacto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.footer {
+  grid-area: footer;
+  background: rgb(90, 100, 115);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
 }
